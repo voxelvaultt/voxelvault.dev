@@ -3,109 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Version6</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <title>Verseless</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000000;
-            color: #FFFFFF;
-            text-align: center;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 10;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-        }
-        header img.logo {
-            width: 70px;
-            height: auto;
-            object-fit: contain;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: #FFFFFF;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #00BFFF;
-        }
-        .hero {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            color: #FFFFFF;
-        }
-        .hero-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -2;
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: -1;
-        }
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            font-weight: 800;
-        }
-        .hero h2 {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            font-weight: 400;
-            color: #CCCCCC;
-        }
-        .tagline {
-            font-size: 1.2rem;
-            color: #00BFFF;
-            font-weight: 600;
-        }
-        footer {
-            padding: 1rem 0;
-            font-size: 0.8rem;
-            color: #8892B0;
-            text-align: center;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/v6_logo.png" alt="version6 Logo" class="logo" /></a>
+        <a href="index.html"><img src="img/v6_logo.png" alt="Verseless Logo" class="logo" /></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
@@ -113,15 +17,20 @@
             <a href="https://www.linkedin.com/company/version6" target="_blank">LinkedIn</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <section class="hero">
-            <h1>Version6</h1>
-            <h2>Redefining possibilities.</h2>
-            <p class="tagline">Exploring the edge of creativity and intelligent systems.</p>
+
+            <div class="hero-content">
+                <h1>Verseless</h1>
+                <h2>Redefining possibilities.</h2>
+                <p class="tagline">Exploring the edge of creativity and intelligent systems.</p>
+                <a href="projects.html" class="cta-button">View Our Work</a>
+            </div>
         </section>
+
     </main>
     <footer>
-        &copy; 2025 Version6. All rights reserved.
+        &copy; 2025 Verseless. All rights reserved.
     </footer>
 </body>
 </html>

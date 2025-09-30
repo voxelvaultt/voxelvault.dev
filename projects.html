@@ -3,116 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects - version6</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <title>Projects - Verseless</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #000000;
-            color: #FFFFFF;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 10;
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-        }
-        header img.logo {
-            width: 70px;
-            height: auto;
-            object-fit: contain;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: #FFFFFF;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #00BFFF;
-        }
-        .main {
-            padding: 120px 2rem 2rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            color: #FFFFFF;
-            text-align: center;
-        }
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        .project {
-            background-color: #111111;
-            border-radius: 10px;
-            overflow: hidden;
-            text-align: left;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 1px solid #222;
-        }
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 191, 255, 0.1);
-        }
-        .project img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid #222;
-        }
-        .project-content {
-            padding: 1.5rem;
-        }
-        .project h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: #FFFFFF;
-        }
-        .project p {
-            color: #CCCCCC;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 2rem;
-            color: #00BFFF;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        footer {
-            padding: 2rem;
-            font-size: 0.8rem;
-            color: #8892B0;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/v6_logo.png" alt="version6 Logo" class="logo" /></a>
+        <a href="index.html"><img src="img/v6_logo.png" alt="Verseless Logo" class="logo" /></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
@@ -120,16 +17,18 @@
             <a href="https://www.linkedin.com/company/version6" target="_blank">LinkedIn</a>
         </nav>
     </header>
-    <main class="main">
+    <main class="container" style="padding-top: 120px;">
         <h1>Our Projects</h1>
         <div class="project-grid">
             <div class="project">
+                <img src="https://via.placeholder.com/350x200" alt="Mobile Games">
                 <div class="project-content">
                     <h2>Mobile Games</h2>
                     <p>Engaging and innovative mobile gaming experiences.</p>
                 </div>
             </div>
             <div class="project">
+                <img src="https://via.placeholder.com/350x200" alt="Adorable Robots">
                 <div class="project-content">
                     <h2>Adorable Robots</h2>
                     <p>Exploring the intersection of robotics and artificial intelligence.</p>
@@ -139,7 +38,7 @@
         <a href="index.html" class="back-link">← Back to Home</a>
     </main>
     <footer>
-        &copy; 2025 version6. All rights reserved.
+        &copy; 2025 Verseless. All rights reserved.
     </footer>
 </body>
 </html>
