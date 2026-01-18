@@ -1,0 +1,34 @@
+/* Dark Theme */
+body.dark-theme {
+    --primary-color: #8a7ffb;
+    --text-color: #d0d0d0;
+    --background-color: #121212;
+    --secondary-background-color: #1e1e1e;
+    --border-color: #2e2e2e;
+}
+
+body.dark-theme .light-logo {
+    display: none;
+}
+
+body.dark-theme .dark-logo {
+    display: block;
+}
+
+body.dark-theme .cta-button {
+    background: var(--primary-color);
+    color: #121212;
+}
+
+body.dark-theme .hero p,
+body.dark-theme .job-listing .location,
+body.dark-theme .blog-post .meta,
+body.dark-theme footer,
+body.dark-theme .footer-grid ul li a {
+    color: #a0a0a0;
+}
+
+body.dark-theme .project,
+body.dark-theme .job-listing {
+    background-color: transparent;
+}

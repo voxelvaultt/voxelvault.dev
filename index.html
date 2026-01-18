@@ -3,34 +3,116 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Verseless</title>
+    <title>Voxel Vault - Building Worlds</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-theme.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <header>
-        <a href="index.html"><img src="img/v6_logo.png" alt="Verseless Logo" class="logo" /></a>
+<body class="dark-theme">
+    <header class="container">
+        <a href="index.html" class="logo">
+            <img src="img/voxelvault-high-resolution-logo-transparent.png" alt="Voxel Vault Logo" class="dark-logo">
+            <img src="img/voxelvault-high-resolution-logo-grayscale-transparent.png" alt="Voxel Vault Logo" class="light-logo">
+        </a>
         <nav>
             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="https://www.linkedin.com/company/version6" target="_blank">LinkedIn</a>
+            <a href="careers.html">Careers</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="theme-switcher">
+            <i class="fas fa-sun"></i>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
-    <main class="container">
-        <section class="hero">
 
-            <div class="hero-content">
-                <h1>Verseless</h1>
-                <h2>Redefining possibilities.</h2>
-                <p class="tagline">Exploring the edge of creativity and intelligent systems.</p>
-                <a href="projects.html" class="cta-button">View Our Work</a>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Building Worlds, One Voxel at a Time.</h1>
+                <p>We create innovative games, apps, and robotics that push the boundaries of imagination.</p>
+                <a href="projects.html" class="cta-button">See Our Work</a>
             </div>
         </section>
 
+        <section class="section container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Voxel Vault acquires Innovate Inc.</h3>
+                        <p class="meta">January 15, 2026</p>
+                        <p>We are excited to announce the acquisition of Innovate Inc., a leader in AI-driven robotics.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-content">
+                        <h3>Our new game "Cybernetic" is now available!</h3>
+                        <p class="meta">January 10, 2026</p>
+                        <p>After two years of development, we are proud to release our latest mobile game, "Cybernetic".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        &copy; 2025 Verseless. All rights reserved.
+
+    <footer class="container">
+        <div class="footer-grid">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/voxelvault-high-resolution-logo-transparent.png" alt="Voxel Vault Logo" class="dark-logo">
+                    <img src="img/voxelvault-high-resolution-logo-grayscale-transparent.png" alt="Voxel Vault Logo" class="light-logo">
+                </a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2026 Voxel Vault. All rights reserved.</p>
     </footer>
+
+    <script>
+        const themeSwitcher = document.querySelector('.theme-switcher i');
+        const body = document.querySelector('body');
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav');
+
+        themeSwitcher.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                themeSwitcher.classList.remove('fa-moon');
+                themeSwitcher.classList.add('fa-sun');
+            } else {
+                themeSwitcher.classList.remove('fa-sun');
+                themeSwitcher.classList.add('fa-moon');
+            }
+        });
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

@@ -3,30 +3,93 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - Verseless</title>
+    <title>Privacy Policy - Voxel Vault</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-theme.css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-    <header>
-        <a href="index.html"><img src="img/v6_logo.png" alt="Verseless Logo" class="logo" /></a>
+<body class="dark-theme">
+    <header class="container">
+        <a href="index.html" class="logo">
+            <img src="img/voxelvault-high-resolution-logo-transparent.png" alt="Voxel Vault Logo" class="light-logo">
+            <img src="img/voxelvault-high-resolution-logo-grayscale-transparent.png" alt="Voxel Vault Logo" class="dark-logo">
+        </a>
         <nav>
             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="https://www.linkedin.com/company/version6" target="_blank">LinkedIn</a>
+            <a href="careers.html">Careers</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="theme-switcher">
+            <i class="fas fa-sun"></i>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
-    <main class="container" style="padding-top: 120px; text-align: left; max-width: 800px;">
-        <h1>Privacy Policy</h1>
-        <p>Verseless is committed to protecting your privacy. We do not collect personal information unless explicitly provided by users (e.g., contact forms or email opt-ins).</p>
+    <main class="container" style="padding-top: 40px; padding-bottom: 40px; text-align: left; max-width: 800px;">
+        <h1 class="section-title">Privacy Policy</h1>
+        <p>Voxel Vault is committed to protecting your privacy. We do not collect personal information unless explicitly provided by users (e.g., contact forms or email opt-ins).</p>
         <p>We may collect anonymous usage statistics to improve our website and products, but we do not share or sell user data to third parties.</p>
-        <p>Our site may contain links to external services (e.g., LinkedIn). We are not responsible for their privacy policies.</p>
-        <p>For any privacy-related concerns, contact us at <a href="mailto:contact@version6.dev">contact@version6.dev</a>.</p>
+        <p>Our site may contain links to external services. We are not responsible for their privacy policies.</p>
+        <p>For any privacy-related concerns, contact us at <a href="mailto:contact@voxelvault.com">contact@voxelvault.com</a>.</p>
         <p><a href="index.html" class="back-link">← Back to Home</a></p>
     </main>
-    <footer>
-        &copy; 2025 Verseless. All rights reserved.
+    <footer class="container">
+        <div class="footer-grid">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/voxelvault-high-resolution-logo-transparent.png" alt="Voxel Vault Logo" class="light-logo">
+                    <img src="img/voxelvault-high-resolution-logo-grayscale-transparent.png" alt="Voxel Vault Logo" class="dark-logo">
+                </a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2026 Voxel Vault. All rights reserved.</p>
     </footer>
+
+    <script>
+        const themeSwitcher = document.querySelector('.theme-switcher i');
+        const body = document.querySelector('body');
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav');
+
+        themeSwitcher.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            if (body.classList.contains('dark-theme')) {
+                themeSwitcher.classList.remove('fa-moon');
+                themeSwitcher.classList.add('fa-sun');
+            } else {
+                themeSwitcher.classList.remove('fa-sun');
+                themeSwitcher.classList.add('fa-moon');
+            }
+        });
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
